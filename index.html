@@ -50,6 +50,11 @@
     <button class="btn btn-outline-secondary" type="button" onclick="printLine()">Enviar</button>
   </div>
 </div>
+<div class="input-group mb-3">
+  
+    <button class="btn" type="button" onclick="showToast()">Toast</button>
+  
+</div>
 </div>
 
 
@@ -57,6 +62,10 @@
   function printLine(){
 	//alert($("#printLineText").val());
 	Android.printLine($("#printLineText").val());
+  }
+  
+  function showToast(){
+  Android.showToast();
   }
 </script>
 
